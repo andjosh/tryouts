@@ -12,44 +12,63 @@
   </head>
   <body>
     <div id="main">
-      <h1 class="text-center message short-trans">Welcome to Tryouts</h1>
+      <div name="superfluous">
+        <h1 class="text-center message short-trans">Welcome to Tryouts</h1>
+      </div>
+      <div class="text-right mini" id='fugitive'><small class="gone" id='escape-hatch' onClick="exitZenMode();">ok, I'm done</small></div>
       <div class="box" id="box">
-        <p class="lead text-right">This is a box</p>
+        <p class="lead text-center"><span class="gone" id="intro">Zen mode</span></p>
+        <p class="lead"><span name="superfluous">Main</span></p>
+        <img src="http://placehold.it/100x100" style="float:left;margin:0.5em 1em 0em 0em;"/>
         <p class="blokk">
-          I got this feeling on the summer day when you were gone
-          I crashed my car into the bridge, I watched, I let it burn
-          I threw your shit into a bag and pushed it down the stairs
-          I crashed my car into the bridge
-
-          I don't care, I love it, I don't care
+          I thought i had it all together
+          But i was led astray
+          The day you walked away
+          You were the clock
+          That was ticking in my heart
+          Changed my state of mind
+          But love's so hard to find
         </p>
-        <p class="text-right">
-          But what's under the lid?
-          <br>
-          <a onclick="moveOverRedRover('box', 'backstage');" class="mini btn">Let's see</a>
+        <img src="http://placehold.it/150x150" style="float:left;margin:0.5em 1em 0em 0em;" name="superfluous"/>
+        <p class="blokk">
+          Your feelings changed like the weather
+          Went from clear to grey
+          On that cloudy day
+          How can i go on
+          Without falling apart
+          Love's so hard to find
+          When someone's on your mind
+        </p>
+        <img src="http://placehold.it/300x150" style="float:right;margin:0.5em 0em 0em 1em;" name="superfluous"/>
+        <p class="blokk">
+          Listen baby
+          Your wish is my command
+          Baby won't you understand
+          That your wish is my command
+          What can I do to make my baby understand
         </p>
       </div>
-      <div class="revealed" id="backstage">
-        <p class="blokk">
-          I'm so bossy, bitch, get off me
-          It's a diffe rent jingle when you hear these car keys
-          Your SL's missing an S, nigga
-          Your plane's missing a chef
-          The common theme see they both got wings
-          If you fly, do it to death
-          It's only one God, and it's only one crown
-          So it's only one king that can stand on this mound
-        </p>
-        <a onclick="moveBackRedRover('box', 'backstage');" class="mini btn">Got it!</a>
-      </div>
+    </div>
+    <div class="box" id="box-2" name="superfluous">
+      <p class="">Superfluous</p>
+      <p class="blokk">
+        List en baby
+        Your wish is my com mand
+      </p>
+      <img src="http://placehold.it/300x300" />
     </div>
     <div class="clearfix"></div>
     <footer>
+      <div name="superfluous">
+        <p class="mini text-center">
+          <a href="">Tryouts</a> is a serial project started by <a href="http://twitter.com/jbckmn">jbckmn</a> to better understand and interact with web pages.
+        </p>
+        <p class="mini text-center">
+          You can follow/contribute <a href='https://github.com/jbckmn/tryouts'>on GitHub</a>, where each branch is a Tryout.
+        </p>
+      </div>
       <p class="mini text-center">
-        <a href="">Tryouts</a> is a serial project started by <a href="http://twitter.com/jbckmn">jbckmn</a> to better understand and interact with web pages.
-      </p>
-      <p class="mini text-center">
-        You can follow/contribute <a href='https://github.com/jbckmn/tryouts'>on GitHub</a>, where each branch is a Tryout.<br>This branch is: <a href='https://github.com/jbckmn/tryouts/tree/under-the-lid' class='btn'><code>under-the-lid</code></a></p>
+        This branch is: <a href='https://github.com/jbckmn/tryouts/tree/zen-mode' class='btn'><code>zen-mode</code></a>
       </p>
     </footer>
     <script src="./script.js" type="text/javascript" charset="utf-8"></script>

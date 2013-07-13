@@ -1,10 +1,24 @@
-function moveOverRedRover(front,back){
-  var mover = document.getElementById(front), backStage = document.getElementById(back);
-  mover.className = ' short-trans move';
-  backStage.className = ' long-trans reveal';
+function introZenMode() {
+  var intro = document.getElementById('intro'), 
+    escape = document.getElementById('escape-hatch'),
+    extras = document.getElementsByName('superfluous');
+  intro.className = 'reveal long-trans';
+  escape.className = 'reveal long-trans';
+  for (var i=0;i<extras.length;i++){
+    extras[i].className = 'gone long-trans';
+  };
+};
+function exitZenMode() {
+  var intro = document.getElementById('intro'), 
+    escape = document.getElementById('escape-hatch'),
+    extras = document.getElementsByName('superfluous');
+  intro.className = 'gone short-trans';
+  escape.className = 'gone short-trans';
+  for (var i=0;i<extras.length;i++){
+    extras[i].className = 'reveal short-trans';
+  };
 }
-function moveBackRedRover(front,back){
-  var mover = document.getElementById(front), backStage = document.getElementById(back);
-  mover.className += ' moved';
-  backStage.className += ' revealed';
-}
+window.onscroll = function (e) {  
+// called when the window is scrolled.
+  introZenMode();
+} 

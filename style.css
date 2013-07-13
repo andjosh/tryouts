@@ -17,12 +17,15 @@ a {
 a:hover{
   color: #222;
 }
-.blokk{font-family: 'BLOKKRegular';}
+.blokk{font-family: 'BLOKKRegular';word-wrap:break-word;}
 code {background-color:#eee;padding:0.4em 0.6em;}
 #main {
   padding: 3em 1em;
   max-width: 1000px;
   margin: 0 auto;
+}
+img {
+  max-width: 100%;
 }
 
 /* Misc toolkit classes */
@@ -92,40 +95,43 @@ input[type="button"]:hover, input[type="submit"]:hover, .btn:hover, button:hover
 
 /* Tryouts */
 /*_____________________________________________*/
-body{background: #e7ecf7;}
-#box, #backstage{padding: 1em;border-radius: 5px;}
-#backstage {
-  margin-top: -40%;
-  margin-bottom: 10%;
-  margin-left: 60%;
-  height: 10em;
-  overflow: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
-  background: #fefefe;
+body{background: #d8f2e6;}
+.message {
+  color: #42bc86;
+  background-color: #b2e5ce;
+  padding: 0.5em 0;
+  border-radius: 5px;
+}
+.message:hover {
+  color:#67ca9e;
+}
+#box {
+  padding: 1em;
+  border-radius: 5px;
+  float: left;
+  max-width: 70%;
+}
+#box-2 {
+  float: left;
+  position: relative;
+  z-index: -1000;
+  max-width: 20%;
 }
 .reveal {
   opacity: 1;
-  z-index: 1;
-}
-.move {
-  background: #e7ecf7;
-  margin: 0 50% 0 -50%;
-  box-shadow: 10px 0 20px rgba(0,0,0,0.3);
-  transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg); /* IE 9 */
-  -webkit-transform: rotate(-10deg); /* Safari and Chrome */
-  z-index: 2000;
   position: relative;
+  z-index: 1000;
 }
-.moved {
-  opacity: 1; 
-  margin: 0; 
-  box-shadow: none; 
-  transform: rotate(0deg);
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Safari and Chrome */
-}
-.revealed {
+.gone {
   opacity: 0; 
-  z-index: -2000;
+  position: relative;
+  z-index: -1000;
+}
+#escape-hatch {
+  background: #fff;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  display: inline;
 }
